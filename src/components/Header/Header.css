@@ -1,0 +1,48 @@
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1650px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+.header-menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header-menu .menu-item{
+    color: #818282;
+}
+.header-menu .menu-item.active{
+    color: #FE8C01;
+    font-weight: 700;
+}
+
+header .cart{
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+}
+
+header .cart img{
+    max-width: 38px;
+}
+
+header .circle{
+    padding: 6px 10px;
+    background-color: #FE8C01;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-bottom: -4px;
+    margin-left: -4px;
+    align-self: flex-end;
+}

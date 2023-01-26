@@ -1,0 +1,56 @@
+section .container{
+    max-width: 1650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+section .container .content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FE8C01;
+}
+
+h1{
+    font-size: 155px;
+    font-weight: 800;
+}
+
+h1 b{
+    color: #FE8C01;
+}
+
+.info{
+    color: #000;
+}
+
+.button_info{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+button{
+    background-color: #FE8C01;
+    color: #fff;
+    border-radius: 100px;
+    padding: 18px 80px;
+    font-size: 28px;
+    outline: none;
+    border: none;
+    font-weight: 500
+}
+
+.button_info p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #C4C4C4;
+}
