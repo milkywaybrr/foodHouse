@@ -1,4 +1,4 @@
-section .container{
+.main .container{
     max-width: 1650px;
     margin: 0 auto;
     display: flex;
@@ -7,7 +7,7 @@ section .container{
     margin-bottom: 150px;
 }
 
-section .container .content {
+.main .container .content {
     display: flex;
     gap: 30px;
     flex-direction: column;

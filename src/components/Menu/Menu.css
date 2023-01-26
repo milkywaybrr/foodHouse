@@ -1,4 +1,6 @@
 .menu_categories .container{
+    max-width: 1650px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +23,25 @@ h2 .line{
     border-radius: 4px;
 }
 
-.menu_categories .content.categories{
+.menu_categories .categories{
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(6, 250px);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: 250px;
+    width: 100%;
+}
+
+.catalog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 390px;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+}
+
+.button-all{
+    background-color: #E9F8FB;
+    font-weight: 400;
+    color: #232323;
 }

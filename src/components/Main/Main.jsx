@@ -3,7 +3,7 @@ import img1 from '../../assets/main/hero-image_hero-right.png';
 
 const Main = () => {
     return (
-        <section>
+        <section className='main'>
             <div className="container">
                 <div className="content">
                     <p>

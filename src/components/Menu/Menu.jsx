@@ -12,6 +12,7 @@ import img2 from '../../assets/catalog/item__image2.png';
 import img3 from '../../assets/catalog/item__image3.png';
 import img4 from '../../assets/catalog/item__image4.png';
 import img5 from '../../assets/catalog/item__image5.png';
+import Catalog from '../Catalog/Catalog';
 
 
 const Menu = () => {
@@ -114,18 +115,25 @@ const Menu = () => {
                     Наше Меню
                     <div className="line"></div>
                 </h2>
-                <div className="content categories">
+                <div className="categories">
                     {
                         categories.map((category) => {
                             return (
-                                <Category url={category.url} name={category.name} />
+                                <Category id={category.id} url={category.url} name={category.name} />
                             )
                         })
                     }
                 </div>
-                <div className="container catalog">
-
+                <div className="catalog">
+                    {
+                        catalog.map((item) => {
+                            return (
+                                <Catalog id={item.id} url={item.url} name={item.name} size={item.size} info={item.info} />
+                            )
+                        })
+                    }
                 </div>
+                <button className="button-all">Показать еще</button>
             </div>
         </section>
     )
