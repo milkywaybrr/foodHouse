@@ -1,6 +1,7 @@
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Menu from "./components/Menu/Menu";
+import Header from "./pages/Header/Header";
+import Main from "./pages/Main/Main";
+import Menu from "./pages/Menu/Menu";
+
 
 export function App() {
   return (

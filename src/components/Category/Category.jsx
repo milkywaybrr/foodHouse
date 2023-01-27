@@ -1,10 +1,10 @@
 import './Category.css';
 
-const Category = ({ id, url, name }) => {
+const Category = ({ onChangeSelectedCategory, category}) => {
     return (
-        <div className="category">
-            <img src={url} alt={id} />
-            <div className="name">{name}</div>
+        <div onClick={() => onChangeSelectedCategory(category.type)} className="category">
+            <img src={category.url} alt={category.id} />
+            <div className="name">{category.name}</div>
         </div>
     )
 }

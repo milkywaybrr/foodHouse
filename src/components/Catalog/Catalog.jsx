@@ -1,13 +1,13 @@
 import './Catalog.css';
 
-const Catalog = ({ id, url, name, size, info }) => {
+const Catalog = ({ catalog }) => {
     return (
         <div className="catalog_item">
-            <img src={url} alt={id} />
+            <img src={catalog.url} alt={catalog.id} />
             <div className="catalog-item_content">
-                <div className="name">{name}</div>
-                <div className="size">{size}</div>
-                <div className="item-info">{info}</div>
+                <div className="name">{catalog.name}</div>
+                <div className="size">{catalog.size}</div>
+                <div className="item-info">{catalog.info}</div>
                 <button className="button">Добавить в корзину</button>
             </div>
         </div>
