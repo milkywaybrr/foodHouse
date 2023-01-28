@@ -20,3 +20,49 @@ body{
   font-family: 'Montserrat Alternates', sans-serif;
   color: #232323;
 }
+
+button{
+  cursor: pointer;
+}
+
+@media (max-width:1650px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 1.4vw;
+  }
+
+  .main .content img {
+    width: 39vw;
+  }
+
+  .button-info p{
+    font-size: 1.056vw;
+  }
+
+  button{
+    font-size: 1.6vw;
+  }
+
+  h2 .line{
+    width: 17vw;
+  }
+
+  .category {
+    font-size: 2vw;
+  }
+
+  .category img{
+    width: 9vw;
+  }
+}
